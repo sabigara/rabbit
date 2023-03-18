@@ -21,7 +21,7 @@ const ImageDisplay: Component<ImageDisplayProps> = (props) => {
         </button>
       }
     >
-      <a class="my-2 block" href={props.url} target="_blank" rel="noopener noreferrer">
+      <a class="my-2 inline-block" href={props.url} target="_blank" rel="noopener noreferrer">
         <img
           class="inline-block max-h-64 max-w-full rounded object-contain shadow hover:shadow-md"
           src={fixUrl(new URL(props.url)).toString()}
